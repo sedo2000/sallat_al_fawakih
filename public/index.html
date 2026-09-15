@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#19a463">
+<title>سلة الفاكهة</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="toast"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">🍎</div>
+    <div><b id="storeName">سلة الفاكهة</b><small>توصيل طازج إلى بابك</small></div>
+  </div>
+  <button class="icon-btn" id="loginBtn">👤</button>
+</header>
+
+<main class="app">
+  <section class="location" id="locationBtn">
+    <span>📍</span>
+    <div><small>التوصيل إلى</small><b id="addressLabel">أضف عنوان التوصيل</b></div>
+    <span>⌄</span>
+  </section>
+
+  <div class="search"><span>⌕</span><input id="search" placeholder="ابحث عن فاكهة، خضروات، عروض..."></div>
+
+  <section class="banners-wrap">
+    <div class="banners" id="banners"></div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>الأقسام</h2><button id="allCats">عرض الكل</button></div>
+    <div class="cats" id="cats"></div>
+  </section>
+
+  <section class="section" id="featuredSection">
+    <div class="section-head"><h2>الأكثر طلباً</h2><button data-section="featured">الكل</button></div>
+    <div class="products" id="featured"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>كل المنتجات</h2><button data-section="all">الكل</button></div>
+    <div class="products grid" id="products"></div>
+  </section>
+</main>
+
+<nav class="bottom-nav">
+  <button class="active" data-tab="home">⌂<span>الرئيسية</span></button>
+  <button data-tab="orders">🧾<span>طلباتي</span></button>
+  <button data-tab="favorites">♡<span>المفضلة</span></button>
+  <button id="cartNav">🛒<i id="cartCount">0</i><span>السلة</span></button>
+</nav>
+
+<div class="modal hidden" id="modal">
+  <div class="sheet" id="sheet"></div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
